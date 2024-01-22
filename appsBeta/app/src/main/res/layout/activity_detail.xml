@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Cadetblue"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:isScrollContainer="true"
+            android:layout_marginRight="10dp"
+            app:menu_colorNormal="@color/biru"
+            app:menu_colorPressed="@color/birumuda"
+            app:menu_fab_size="normal"
+            app:menu_icon="@drawable/baseline_format_list_bulleted_24"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit"
+                app:fabSize="mini"
+                app:fab_colorNormal="@color/Green"
+                app:fab_colorPressed="#8ADAB2"
+                app:fab_showShadow="true" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete"
+                app:fabSize="mini"
+                app:fab_colorNormal="@color/Red"
+                app:fab_colorPressed="#ff4554"
+                app:fab_showShadow="true" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailTitle"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:layout_marginTop="14dp"
+        android:textSize="24dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:id="@+id/detailImage"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/upload"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Description"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|end"
+        android:gravity="start"
+        android:id="@+id/detailDesc"
+        android:textSize="18dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="ingredients"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:id="@+id/detailIngredients"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="additional"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:id="@+id/detailAdditional"
+            android:textSize="18dp"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Step"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:id="@+id/detailStep"
+        android:textSize="18dp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

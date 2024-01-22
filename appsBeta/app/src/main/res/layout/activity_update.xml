@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Data"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:src="@drawable/upload"
+                android:id="@+id/updateImage"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateTitle"
+                android:hint="Enter Title"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/roundedcorner"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateDesc"
+                android:hint="enter Description"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedcorner"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ingredients *"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateIngredients"
+                android:hint="ingredients"
+                android:textColorHint="#c4c4e6"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:background="@drawable/roundedcorner"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="additional Ingredients"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateAdditional"
+                android:hint="additional ingredients"
+                android:textColorHint="#c4c4e6"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:background="@drawable/roundedcorner"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateStep"
+                android:hint="How To"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedcorner"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:id="@+id/updateButton"
+                android:textSize="30sp"
+                android:fadingEdge="vertical"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
